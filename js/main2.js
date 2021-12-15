@@ -7,7 +7,7 @@ if (localStorage.getItem('listaUsuarios')) {
      }
 
 function profesores(){
-    const url = "jsonLocal.json"
+    const url = "../jsonLocal.json"
     $.get(url,function(respuesta,estado){
     console.log(respuesta);
     console.log(estado);
@@ -25,7 +25,7 @@ function profesores(){
 }
 
 function tutores(){
-    const url = "jsonLocal.json"
+    const url = "../jsonLocal.json"
     $.get(url,function(respuesta,estado){
     console.log(respuesta);
     console.log(estado);
