@@ -1,0 +1,14 @@
+{
+"profesores": [
+    {
+        "nombre": "Nicolas",
+        "apellido": "Martini"
+    }
+],
+"tutores": [
+    {
+        "nombre": "Juan",
+        "apellido": "Narvaez"
+    }
+]
+}
