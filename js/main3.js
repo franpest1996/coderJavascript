@@ -40,17 +40,3 @@ $(document).ready(() => {
     })          
 });
 
-
-    
-
-// $(`#borrar${usuario.documento}`).on("click",function(){
-//     if (localStorage.getItem('listaUsuarios')){
-//         let usuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
-//         for(let i = 0; i < usuarios.length; i++){
-//             let usuario = usuarios[i];
-//             Storage.splice(usuario[i]);
-//         }
-//     } 
-// })
-
-          

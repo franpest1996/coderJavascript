@@ -1,6 +1,5 @@
 const contenedorDatos = $('#datosAlumnos');
 
-
 if (localStorage.getItem('listaUsuarios')) {
          let usuarios = JSON.parse(localStorage.getItem('listaUsuarios'));
          crearAlumno(usuarios, contenedorDatos);
@@ -45,7 +44,6 @@ function tutores(){
 tutores();
 profesores();
 
-
 function crearAlumno(usuarios){
     $(usuarios).each((index, usuario) => {
         $(".table").append(`
@@ -61,28 +59,3 @@ function crearAlumno(usuarios){
         `);
     });
 }
-
-
-// function crearAlumno(usuarios){ 
-    
-   
-//     $(usuarios).each((index, usuario) => {
-        
-//         $("#tarjetasAlumnos").append(`
-//             <div class="alumnos mb-3"">
-//                 <div class="alumnosNombre">${usuario.nombre} ${usuario.apellido}</div>
-//                 <ul class="lista">
-//                     <li>DNI: ${usuario.documento}</li>
-//                     <li>Mail: ${usuario.email}</li>
-//                     <li>Cel: ${usuario.telefono}</li>
-//                     <li>Ciudad: ${usuario.ciudad}</li>
-//                     <li>Primer entrega: ${usuario.nota1}</li>
-//                     <li>Segunda entrega: ${usuario.nota2}</li>
-//                     <button id="">Editar</button>
-//                     <button id="">Eliminar</button>
-//                 <ul>
-//             </div>    
-//         `);
-//     });
-// }
-
