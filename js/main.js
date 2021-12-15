@@ -75,9 +75,13 @@ const inputNota1 = $('#nota1');
 const inputNota2 = $('#nota2');
 
 
+$(`#btn`).on("keyup",function(){
+    if(event.keyCode === 13){
+        validar();
+    }
+})
 
-
-$(".btn").on("click",function(e){{
+$(".btn").on("click",function validar(e){{
     e.preventDefault();
     if(inputNombre.val() === ''){
             swal('Ingrese un nombre',"","error");
